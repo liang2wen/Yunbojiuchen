@@ -8,6 +8,7 @@
 // +----------------------------------------------------------------------
 
 namespace app\index\controller;
+use think\Request;
 
 class Verify
 {
@@ -16,10 +17,10 @@ class Verify
      */
     public function verify()
     {
-        $echostr    = \think\Request::instance()->get('echostr');
-        $signature  = \think\Request::instance()->get('signature');
-        $nonce      = \think\Request::instance()->get('nonce');
-        $timestamp  = \think\Request::instance()->get('timestamp');
+        $echostr    = Request::instance()->get('echostr');
+        $signature  = Request::instance()->get('signature');
+        $nonce      = Request::instance()->get('nonce');
+        $timestamp  = Request::instance()->get('timestamp');
 
         $signature_local = $this->getSHA1(TOKEN, $timestamp, $nonce);
         if ($signature_local == $signature) {

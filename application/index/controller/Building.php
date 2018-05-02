@@ -7,11 +7,26 @@
 // | Author: 云帛九辰 <jiuboyunchen@163.com>
 // +----------------------------------------------------------------------
 
-// 应用公共文件
-// 公共配置信息
-// 微信配置
-define('APPID', 'wx7a87593ecf1bab75');
-define('APPSECRET', '1a66ba8ad22ade2e56f8874e9e41637c');
-define('TOKEN', 'yunbojiuchen');
+namespace app\index\controller;
 
-?>
+/**
+* 处理租售中心请求
+*/
+class Building extends \think\Controller
+{
+    /**
+     * 显示租售中心信息
+     */
+    public function center(){
+        // Do something
+        return view('center', ['title' => '租售中心']);
+    }
+
+    /**
+     * 显示房源信息
+     */
+    public function houseInfo(){
+        // DO something
+        return view('houseInfo', ['title' => '房源中心']);
+    }
+}
