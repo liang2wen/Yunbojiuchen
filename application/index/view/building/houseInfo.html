@@ -1,1 +1,294 @@
-<p>这只是一个Demo</p>
+<div class="weui-cells__title title-fixed">
+    <div class="weui-search-bar" id="search_bar">
+        <form class="weui-search-bar__form">
+            <div class="weui-search-bar__box">
+                <i class="weui-icon-search"></i>
+                <input type="search" class="weui-search-bar__input" id="search_input" placeholder="搜索" />
+                <a href="javascript:" class="weui-icon-clear" id="search_clear"></a>
+            </div>
+            <label for="search_input" class="weui-search-bar__label" id="search_text">
+                <i class="weui-icon-search"></i>
+                <span>搜索</span>
+            </label>
+        </form>
+        <a href="javascript:" class="weui-search-bar__cancel-btn" id="search_cancel">取消</a>
+    </div>
+    <div class="weui-tab">
+        <div class="weui-navbar">
+            <a href="#tab1" class="weui-navbar__item">
+                合租/整租
+            </a>
+            <a href="#tab2" class="weui-navbar__item">
+                附近
+            </a>
+            <a href="#tab3" class="weui-navbar__item">
+                入住日期
+            </a>
+            <a href="#tab4" class="weui-navbar__item">
+                筛选
+            </a>
+        </div>
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item">
+                <div class="tab-content">
+                    <p>独享空间</p>
+                    <p><small>[独享] 上千套 独享办公空间 高品质 任您挑</small></p>
+                    <p><span class="cube">不限</span><span class="cube cube-active">100m<sup>2</sup></span><span class="cube">200m<sup>2</sup></span><span class="cube">300m<sup>2</sup>+</span></p>
+                </div>
+                <div class="tab-content">
+                    <p>共享空间</p>
+                    <p><small>[共享] 共享办公 充分利用空间 任您选</small></p>
+                    <p><span class="cube">不限</span><span class="cube">100m<sup>2</sup></span><span class="cube">200m<sup>2</sup></span><span class="cube">300m<sup>2</sup>+</span></p>
+                </div>
+                <div class="tab-content">
+                    <p>精选办公区域</p>
+                    <p><small>[独享] 精挑细选 合理规划 任您挑</small></p>
+                    <p><span class="cube">不限</span><span class="cube">100m<sup>2</sup></span><span class="cube">200m<sup>2</sup></span><span class="cube cube-active">300m<sup>2</sup>+</span></p>
+                </div>
+                <div class="tab-content">
+                    <p>豪华</p>
+                    <p><small>[独享] 土豪 潜力股 豪华办公空间 任您挑</small></p>
+                    <p><span class="cube cube-active">不限</span><span class="cube">100m<sup>2</sup></span><span class="cube">200m<sup>2</sup></span><span class="cube">300m<sup>2</sup>+</span></p>
+                </div>
+                <div class="button-sp-area tab-content">
+                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default weui-btn_reset">重置</a>
+                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary weui-btn_confirm">确定</a>
+                </div>
+            </div>
+            <div id="tab2" class="weui-tab__bd-item">
+                <div class="tab-content" style="margin-top: 0px;">
+                    <div class="location">
+                        <p>附近</p>
+                        <p>商圈</p>
+                        <p class="location-active">地铁</p>
+                    </div>
+                    <div class="location-area">
+                        <p>不限</p>
+                        <p>1号线</p>
+                        <p class="location-active">2号线</p>
+                        <p>4号线</p>
+                        <p>5号线</p>
+                        <p>6号线</p>
+                        <p>7号线</p>
+                        <p>8号线</p>
+                        <p>9号线</p>
+                        <p>10号线</p>
+                        <p>13号线</p>
+                        <p>14号线</p>
+                        <p>15号线</p>
+                        <p>16号线</p>
+                        <p>S1号线</p>
+                        <p>八通线</p>
+                        <p>昌平线</p>
+                        <p>亦庄线</p>
+                        <p>房山线</p>
+                        <p>机场线</p>
+                    </div>
+                    <div class="location-detail">
+                        <p class="choose-location">不限</p>
+                        <p class="choose-location">西直门</p>
+                        <p class="choose-location">积水潭</p>
+                        <p class="choose-location">鼓楼大街</p>
+                        <p class="choose-location">安定门</p>
+                        <p class="choose-location">雍和宫</p>
+                        <p class="choose-location">东直门</p>
+                        <p class="choose-location">东四十条</p>
+                        <p class="choose-location">朝阳门</p>
+                        <p class="choose-location location-active">建国门</p>
+                        <p class="choose-location">北京站</p>
+                        <p class="choose-location">崇文门</p>
+                        <p class="choose-location">前门</p>
+                        <p class="choose-location">和平门</p>
+                        <p class="choose-location">宣武门</p>
+                        <p class="choose-location">长椿街</p>
+                        <p class="choose-location">复兴门</p>
+                        <p class="choose-location">阜成门</p>
+                        <p class="choose-location">车公庄</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="weui-tab__bd-item">
+                <input class="weui-input" id="date-picker" type="hidden" readonly="">
+                <div id="inline-calendar"></div>
+                <div class="button-sp-area tab-content">
+                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default weui-btn_reset">重置</a>
+                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary weui-btn_confirm">确定</a>
+                </div>
+            </div>
+            <div id="tab4" class="weui-tab__bd-item">
+                <div class="tab-content">
+                    <p style="color: #FFB90F;">15000以下</p>
+                    <div class="weui-slider-box">
+                        <div class="weui-slider">
+                            <div class="weui-slider__inner">
+                                <div style="width: 60%;" class="weui-slider__track"></div>
+                                <div style="left: 60%;" class="weui-slider__handler"></div>
+                            </div>
+                        </div>
+                        <div class="weui-slider-box__value">不限</div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <p>房源朝向</p>
+                    <p><small><span class="cube cube-active">南</span><span class="cube">北</span><span class="cube">东</span><span class="cube">西</span><span class="cube">南北</span></small></p>
+                </div>
+                <div class="tab-content">
+                    <p>房源特色</p>
+                    <p><small><span class="cube">首次出租</span><span class="cube cube-active">独立空间</span><span class="cube">集体供暖</span><span class="cube">网络</span></small></p>
+                </div>
+                <div class="tab-content">
+                    <p>房源周边</p>
+                    <p><small><span class="cube cube-active">离地铁近</span><span class="cube cube-active">绿化率高</span></small></p>
+                </div>
+                <div class="tab-content">
+                    <p>签约时长</p>
+                    <p><small><span class="cube cube-active">年租</span><span class="cube">短租</span></small></p>
+                </div>
+                <div class="tab-content">
+                    <p>房源状态</p>
+                    <p><small><span class="cube">可立即入住</span><span class="cube">可预订</span><span class="cube cube-active">办公家具齐全</span></small></p>
+                </div>
+                <div class="button-sp-area tab-content">
+                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default weui-btn_reset">重置</a>
+                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary weui-btn_confirm">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="house-list" class="weui-cells">
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/1.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">商品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|23/25层<span style="float: right; display: block;" class="price">¥50000元/月</span></p>
+            <p class="detail">距4号线中关村站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/2.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">商品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|23/25层<span style="float: right; display: block;" class="price">¥50000元/月</span></p>
+            <p class="detail">距2号线西直门站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/3.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">精品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|18/25层<span style="float: right; display: block;" class="price">¥45000元/月</span></p>
+            <p class="detail">距1号线石景山站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/4.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">商品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|02/25层<span style="float: right; display: block;" class="price">¥30000元/月</span></p>
+            <p class="detail">距1号线国贸站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/3.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">商品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|10/25层<span style="float: right; display: block;" class="price">¥60000元/月</span></p>
+            <p class="detail">距4号线中关村站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/1.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">精品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|25/25层<span style="float: right; display: block;" class="price">¥100000元/月</span></p>
+            <p class="detail">距1号线国贸站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/1.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">商品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|23/25层<span style="float: right; display: block;" class="price">¥50000元/月</span></p>
+            <p class="detail">距4号线中关村站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/2.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">商品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|23/25层<span style="float: right; display: block;" class="price">¥50000元/月</span></p>
+            <p class="detail">距2号线西直门站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="IMAGE_PATH/3.jpg" alt="" style="width:100px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p class="house">精品房整租-商户可利用面积大</p>
+            <p class="detail">200m<sup>2</sup>|18/25层<span style="float: right; display: block;" class="price">¥45000元/月</span></p>
+            <p class="detail">距1号线石景山站100米</p>
+            <p class="detail">
+                <span class="cube">集体供暖</span>
+                <span class="cube">离地铁近</span>
+                <span class="cube">清洁护理</span>
+            </p>
+        </div>
+    </a>
+</div>
+<div class="script">
+    <script type="text/javascript">
+        $("#date-picker").calendar({
+            container: "#inline-calendar"
+        });
+
+        $(".weui-btn_confirm, .choose-location").click(function(){
+            $(".weui-bar__item--on").removeClass("weui-bar__item--on");
+            $(".weui-tab__bd-item--active").removeClass("weui-tab__bd-item--active");
+            $(".title-fixed").removeClass("title-background");
+        });
+
+        $(".weui-navbar__item").click(function(){
+            $(".title-fixed").addClass("title-background");
+        });
+    </script>
+</div>  
