@@ -1,0 +1,115 @@
+/*!
+ * 云帛九辰 [ WE CAN DO ALL THINGS ]
+ * Copyright (c) 2018-2028 http://www.yunbojiuchen.com All rights reserved.
+ * 云帛九辰 <jiuboyunchen@163.com>
+ */
+
+html{
+    letter-spacing: 1px;
+}
+
+.title-fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+}
+
+.title-background{
+    background-color: #8c8c8c6b;
+}
+
+.house{
+    font-size: 14px;
+}
+
+.detail{
+    font-size: 12px;
+    color: #888888;
+}
+
+.price{
+    color: #f1c232;
+    font-size: 13px;
+}
+
+.cube{
+    font-size: 11px;
+    border-width: 0.5px;
+    border-style: solid;
+    padding: 2px;
+    border-color: #d0d0d0;
+}
+
+.cube-active{
+    color: #FFB90F;
+    background-color: #ffdb853b;
+    border: solid #ffb90fb0 0.5px;
+}
+
+.weui-navbar__item{
+    padding: 0px !important;
+}
+
+small{
+    color: #999999;
+}
+
+.tab-content{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-content p{
+    margin-bottom: 10px;
+}
+
+.tab-content span{
+    padding: 3px 15px;
+    margin: 5px 10px;
+}
+
+.weui-btn_confirm{
+    width: 200px;
+    margin-left: 10px;
+}
+
+.weui-btn_reset{
+    width: 90px;
+}
+
+.location,.location-area,.location-detail{
+    display: block;
+    float: left;
+    width: 33%;
+    padding-top: 20px;
+    height: 475px;
+    overflow: auto;
+}
+
+.location-area{
+    background-color: #f9f9f98a;
+}
+
+.location-detail{
+    background-color: #e4e4e4a1;
+}
+
+.location-active{
+    color: #FFB90F;
+    margin: 0px 25%;
+    border-bottom: solid #FFB90F 0.5px;
+}
+
+.weui-tab__bd-item{
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #abababd1;
+}
+
+#inline-calendar{
+    height: 320px;
+    padding-top: 10px;
+}
