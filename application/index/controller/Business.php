@@ -12,7 +12,7 @@ namespace app\index\controller;
 /**
 * 处理办公必备请求
 */
-class Business extends think\Controller
+class Business extends \think\Controller
 {
     /**
      * 显示办公必备信息

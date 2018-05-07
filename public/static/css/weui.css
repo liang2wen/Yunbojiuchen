@@ -388,7 +388,7 @@ input.weui-btn_plain-default{
   font-size:12px;
 }
 .weui-cells__title + .weui-cells{
-  margin-top:56px;
+  margin-top:0px;
 }
 .weui-cells__tips{
   margin-top:.3em;
