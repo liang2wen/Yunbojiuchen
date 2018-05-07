@@ -12,7 +12,7 @@ namespace app\index\controller;
 /**
 * 处理个人中心请求
 */
-class Person extends think\Controller
+class Person extends \think\Controller
 {
     /**
      * 个人信息中心
